@@ -147,7 +147,6 @@ VALUES
     (14, 'Em Busca do Tempo Perdido', 1913, 14, '9781515151515', 29.50),
     (15, 'Hamlet', 1603, 15, '9781616161616', 12.25);
 
-
 INSERT INTO Pedidos (PedidoID, DataPedido, ValorTotal)
 VALUES
     (16, '2023-09-16', 22.99 ),
