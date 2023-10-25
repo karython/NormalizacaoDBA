@@ -56,6 +56,7 @@ foreign key (livroid) references livros(livroid)
 
 
 
+
 CREATE TABLE Clientes (
     ClienteID INT PRIMARY KEY auto_increment,
     NomeCliente VARCHAR(100) NOT NULL,
@@ -194,6 +195,20 @@ select * from pedidos;
 select * from clientes;
 select * from livros;
 select * from autores;
+select * from pedidoid;
+
+select CURRENT_DATE; -- questão 1
+select pedidoid,datapedido,valortotal,valortotal*1.1 from pedidos; -- questão 2
+select pedidoid,datapedido,valortotal,valortotal*1.1 as acrescido,valortotal*.1from pedidos; //*questão 3*/
+select upper (nomeCliente), lower(email) from clientes; //*questão 4*/
+select substring(nomecliente,1,3),email from clientes; /*questão 5*/
+select*, current_date, datapedido as diferenca from pedidos; /*questão 6*/
+select*, datediff(current_date, datapedido) as diferenca, 
+date_add(datapedido, interval 15 day) as quantidade from pedidos; /*questão7*/
+
+
+
+
 
 
 
